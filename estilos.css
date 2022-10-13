@@ -1,0 +1,262 @@
+*{ box-sizing: border-box;}
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(imagens/fundo-principall.jpg);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    text-align: center;
+    margin: auto;
+    background-color: rgba(239, 237, 255, 0);
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 25px;
+    
+}
+
+header h1 img{
+    border-radius: 100%;
+}
+
+header h1 img {
+    max-width: 20%;
+}
+
+
+nav{
+    transform: scale(0.9);
+    margin-left: 190px;
+    margin-right: 190px;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    justify-content:space-evenly;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.897);
+    min-width: 400px;
+    max-width: 1000px;
+    
+
+}
+
+
+p{
+    font-size: 20px;
+}
+    
+
+
+nav a{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.11);
+    transition: 400ms;
+    border-radius: 10%;
+    font-size: 16px;
+    
+}
+
+nav a:hover{
+    background-color: rgba(151, 151, 151, 0.692);
+}
+
+h1, nav{
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+.sombra{
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.082);
+    text-shadow: 1px 1px 3px black;
+}
+
+main{
+    padding-top: 40px;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+div h2{
+    font-size: 50px;
+    animation-name:aparecer ;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    
+}
+
+div p{
+    font-size: 30px;
+    animation-name:aparecer ;
+    animation-duration: 2s;
+    animation-delay: 700ms;
+    animation-fill-mode: backwards;
+}
+
+.destaque{
+    background-image: url(imagens/blackhole.jpg);
+    height: 520px;
+    color: white;
+    text-align: center;
+
+    background-attachment: fixed;
+    background-size: cover;
+    
+  
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    align-content: center;
+
+}
+
+@keyframes aparecer{
+    from {opacity: 0;}
+    and {transform: scale(1.1);}
+    and {}
+    to{opacity: 1;}
+}
+
+
+.texto{
+    font-size: 18px;
+}
+
+img{
+    
+    max-width: 100%;
+    
+}
+
+
+figure{
+    border-radius: 10px;
+    min-width: auto;
+    
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+figure img{
+    border: solid rgba(245, 245, 220, 0.295);
+    border-radius: 6px;
+    transition: 1s;
+    margin-bottom: 15px;
+    
+}
+
+figure img:hover{
+    transform: scale(1.08);
+}
+
+
+
+
+
+
+
+
+/* oque é */
+.fundo{
+    background-color: rgba(107, 107, 107, 0.267);
+    width: 1000px;
+    margin: auto;
+    padding: 15px 30px;
+    border-radius: 8px;
+
+}
+
+iframe{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+/* TEORIAS */
+.caixas{
+    background-color: rgba(21, 1, 31, 0.637);
+    border-radius: 15px;
+    border: solid rgba(122, 121, 121, 0.445);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+
+.conteudo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* rodapé */
+footer{
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 420px) {
+
+    nav{margin:auto;}
+
+figure{min-width: 100px;}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .limitador{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    figure{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+}
+
+@media screen and (min-width: 982px) {
+
+    figure img{margin:0;}
+    
+}
