@@ -3,7 +3,7 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(imagens/fundo-principall.jpg);
+    background-image: url(imagens/PRINCIPAL.jpg);
     color: white;
     background-size: cover;
     background-attachment: fixed;
@@ -15,11 +15,11 @@ header{
 
     text-align: center;
     margin: auto;
-    background-color: rgba(239, 237, 255, 0);
     padding: 3px;
     font-weight: bold;
     border-radius: 15px;
     font-size: 25px;
+    background-color: black;
 }
 
 header h1 img{
@@ -116,11 +116,12 @@ div p{
     color: white;
     text-align: center;
 
+
+    
+
     background-attachment: fixed;
     background-size: cover;
     
-  
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -128,53 +129,74 @@ div p{
     
     align-content: center;
 
+    max-width: 100%;
+
 }
 
 @keyframes aparecer{
     from {opacity: 0;}
     and {transform: scale(1.1);}
-    and {}
     to{opacity: 1;}
 }
 
+ul{
+    font-size: 19px;
+}
 
 .subtitulos{
     font-family: 'Inconsolata', monospace;
     text-shadow: black 5px 5px 3px;
+    margin-bottom: 90px;
 }
 
+.segundo-subtitulo{
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+/* texto index */
 .texto{
-    font-size: 23px;
-    max-width: 1000px;
+    font-size: 25px;
     margin: auto;
+    width: 75%;
+    margin-bottom: 90px;
+    border-bottom: solid rgba(128, 127, 127, 0.514);
+    margin-top: 50px;
 }
 
-img{
-    
-    max-width: 100%;
-    
-}
 
+img{ max-width: 100%;}
+
+li{
+    margin: 20px;
+}
 
 figure{
     border-radius: 10px;
     min-width: auto;
-    
+    justify-content: space-around;
     text-align: center;
     align-items: center;
     align-content: center;
+    
 }
 
-figure img{
+figure a img{
     border: solid rgba(245, 245, 220, 0.295);
     border-radius: 6px;
     transition: 1s;
     margin-bottom: 15px;
+    width: 100%;
     
 }
 
+figure a{
+    display: flex;
+
+}
+
 figure img:hover{
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 
@@ -189,7 +211,8 @@ figure img:hover{
     background-color: rgba(107, 107, 107, 0.267);
     width: 1000px;
     margin: auto;
-    padding: 15px 30px;
+    padding: 20px;
+    margin-bottom: 30px;
     border-radius: 8px;
 
 }
@@ -206,11 +229,10 @@ iframe{
 
 /* TEORIAS */
 .caixas{
-    background-color: rgba(21, 1, 31, 0.637);
+    background-color: rgba(240, 240, 240, 0.527);
     border-radius: 15px;
-    border: solid rgba(122, 121, 121, 0.445);
+    border: solid rgb(15, 15, 15);
     padding: 10px;
-    text-align: center;
     margin-bottom: 50px;
     
 }
@@ -228,6 +250,7 @@ iframe{
 
 .textinho{
     padding-left: 25px;
+    color: black;
 }
 
 
@@ -244,36 +267,99 @@ iframe{
 footer{
     padding: 20px;
     background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.637);
     text-align: center;
+    border-top: 0.4px solid rgba(112, 111, 111, 0.226);
 }
 
+
+/* icones redes sociais */
+div.redes{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+} 
+
+.redes img{
+    padding: 10px;
+    transition: 2s;
+    transform: scale(-0.5px);
+    
+}
+
+.redes img:hover{
+    border: 2px;
+    transform: translate(-2px);
+    
+}
+
+/* Como Surgem */
+#surgem{
+    display: flex;
+    flex-direction: column;
+    max-width: 35%;
+    margin: auto;
+}
+
+#textinho{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 17px;
+}
 
 
 @media screen and (min-width: 420px) {
 
-    nav{margin:auto;}
+nav{margin:auto;}
 
 figure{min-width: 100px;}
 
+.texto{font-size: 17px;}
+
+.fundo{max-width: 390px;}
+
+iframe{max-width: 350px;}
+
+article{ max-width: 350px;}
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 730px){
+
+    .fundo{ max-width: 690px;}
+
+    iframe{max-width: 630px;}
+
+    article{ max-width: 620px;}      
+}
+
+    
+
+
+@media screen and (min-width: 1100px) {
 
     .limitador{
-        max-width: 1200px;
+        max-width: 1100px;
         margin: auto;
     }
 
     figure{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-content: center;
     }
-}
 
-@media screen and (min-width: 982px) {
+    figure img{
+        margin: 30px;
+    }
 
-    figure img{margin:0;}
-    
+    .fundo{max-width: 1050px;}
+
+    iframe{max-width: 1000px;}
+
+    article{ 
+        max-width: 1000px;
+        margin: auto;
+    }
 }
