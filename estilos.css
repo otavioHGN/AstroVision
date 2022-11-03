@@ -146,7 +146,7 @@ ul{
 .subtitulos{
     font-family: 'Inconsolata', monospace;
     text-shadow: black 5px 5px 3px;
-    margin-bottom: px;
+    margin-bottom: 90px;
 }
 
 .segundo-subtitulo{
@@ -177,8 +177,7 @@ figure{
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    align-content: center;
-    
+    align-content: center;   
 }
 
 figure a img{
@@ -187,16 +186,15 @@ figure a img{
     transition: 1s;
     margin-bottom: 15px;
     width: 100%;
-    
+    transform: scale(1.1);
 }
 
 figure a{
     display: flex;
-
 }
 
 figure img:hover{
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 
@@ -209,7 +207,7 @@ figure img:hover{
 /* oque é */
 .fundo{
     background-color: rgba(107, 107, 107, 0.267);
-    width: 80%;
+    width: 85%;
     margin: auto;
     padding: 20px;
     margin-bottom: 30px;
