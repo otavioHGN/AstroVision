@@ -146,7 +146,7 @@ ul{
 .subtitulos{
     font-family: 'Inconsolata', monospace;
     text-shadow: black 5px 5px 3px;
-    margin-bottom: 90px;
+    margin-bottom: px;
 }
 
 .segundo-subtitulo{
@@ -209,7 +209,7 @@ figure img:hover{
 /* oque é */
 .fundo{
     background-color: rgba(107, 107, 107, 0.267);
-    width: 1000px;
+    width: 80%;
     margin: auto;
     padding: 20px;
     margin-bottom: 30px;
@@ -222,6 +222,7 @@ iframe{
     text-align: center;
     display: flex;
     justify-content: center;
+    width: 85%;
     
 }
 
@@ -319,8 +320,6 @@ figure{min-width: 100px;}
 
 .fundo{max-width: 390px;}
 
-iframe{max-width: 350px;}
-
 article{ max-width: 350px;}
 }
 
@@ -328,8 +327,6 @@ article{ max-width: 350px;}
 @media screen and (min-width: 730px){
 
     .fundo{ max-width: 690px;}
-
-    iframe{max-width: 630px;}
 
     article{ max-width: 620px;}      
 }
@@ -355,8 +352,6 @@ article{ max-width: 350px;}
     }
 
     .fundo{max-width: 1050px;}
-
-    iframe{max-width: 1000px;}
 
     article{ 
         max-width: 1000px;
